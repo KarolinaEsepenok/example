@@ -14,18 +14,19 @@ function App() {
         ]
     )
     let [title, setTitle] = useState('')
-    let [error,setError]=useState<string|null>(null)
+   // let [error,setError]=useState<string|null>(null)
     const addMessage = (title:string) => {
-        const newMessage= {id:v1(),message:title}
 
-        setMessage([newMessage,...message])
+     const newMessage= {id:v1(),message:title}
+
+      setMessage([newMessage,...message])
     }
     const callback=()=>{
-        if(title.trim() !== ''){
+      //  if(title.trim() !== ''){
         addMessage(title)
         setTitle('')
-    }else {
-        setError('Message is requared')}
+   // }else {
+     //   setError('Message is requared')}
 
 }
   return (
